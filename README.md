@@ -80,10 +80,18 @@ and activate it
 ```
 source scve/bin/activate
 ```
-The name of the virtual enviroment should appear, in brackets, on the left of your command line. 
+The name of the virtual enviroment should appear, in brackets, on the left of your command line.
+
+Before proceeding to install requirements, you need to install this library:
+```
+sudo apt install python3-pyqt5 libsecp256k1-0 python3-cryptography
+```
 Now you can install the dependencies
 ```
 pip3 install -r requirements.txt
+```
+and then
+```
 sudo apt install apt-xapian-index
 ```
 Finally, you are ready to run the tool
@@ -91,10 +99,6 @@ Finally, you are ready to run the tool
 python3 seedcheck.py
 ```
 
-If you encounter some dependency issue, try this:
-```
-sudo apt install python3-pyqt5 libsecp256k1-0 python3-cryptography
-```
 Sometimes pip may not install the packages listed in requirements.txt in the proper way.
 In this case, just install the missing package shown in the error message with
 ```
